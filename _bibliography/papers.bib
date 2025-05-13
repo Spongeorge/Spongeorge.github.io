@@ -1,115 +1,93 @@
 ---
 ---
 
-@string{aps = {American Physical Society,}}
-
-@book{einstein1920relativity,
-  title={Relativity: the Special and General Theory},
-  author={Einstein, Albert},
-  year={1920},
-  publisher={Methuen & Co Ltd},
-  html={relativity.html}
+@inproceedings{ahmed-etal-2024-generating,
+    title = "Generating Harder Cross-document Event Coreference Resolution Datasets using Metaphoric Paraphrasing",
+    author = "Ahmed, Shafiuddin Rehan  and
+      Wang, Zhiyong Eric  and
+      Baker, George Arthur  and
+      Stowe, Kevin  and
+      Martin, James H.",
+    editor = "Ku, Lun-Wei  and
+      Martins, Andre  and
+      Srikumar, Vivek",
+    booktitle = "Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers)",
+    month = aug,
+    year = "2024",
+    address = "Bangkok, Thailand",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.acl-short.27/",
+    doi = "10.18653/v1/2024.acl-short.27",
+    pages = "276--286",
+    abstract = "The most popular Cross-Document Event Coreference Resolution (CDEC) datasets fail to convey the true difficulty of the task, due to the lack of lexical diversity between coreferring event triggers (words or phrases that refer to an event). Furthermore, there is a dearth of event datasets for figurative language, limiting a crucial avenue of research in event comprehension. We address these two issues by introducing ECB+META, a lexically rich variant of Event Coref Bank Plus (ECB+) for CDEC on symbolic and metaphoric language. We use ChatGPT as a tool for the metaphoric transformation of sentences in the documents of ECB+, then tag the original event triggers in the transformed sentences in a semi-automated manner. In this way, we avoid the re-annotation of expensive coreference links. We present results that show existing methods that work well on ECB+ struggle with ECB+META, thereby paving the way for CDEC research on a much more challenging dataset. Code/data: https://github.com/ahmeshaf/llms{\_}coref"
 }
 
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
+@inproceedings{ahmed-etal-2024-linear,
+    title = "Linear Cross-document Event Coreference Resolution with {X}-{AMR}",
+    author = "Ahmed, Shafiuddin Rehan  and
+      Baker, George Arthur  and
+      Judge, Evi  and
+      Reagan, Michael  and
+      Wright-Bettner, Kristin  and
+      Palmer, Martha  and
+      Martin, James H.",
+    editor = "Calzolari, Nicoletta  and
+      Kan, Min-Yen  and
+      Hoste, Veronique  and
+      Lenci, Alessandro  and
+      Sakti, Sakriani  and
+      Xue, Nianwen",
+    booktitle = "Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING 2024)",
+    month = may,
+    year = "2024",
+    address = "Torino, Italia",
+    publisher = "ELRA and ICCL",
+    url = "https://aclanthology.org/2024.lrec-main.920/",
+    pages = "10517--10529",
+    abstract = "Event Coreference Resolution (ECR) as a pairwise mention classification task is expensive both for automated systems and manual annotations. The task`s quadratic difficulty is exacerbated when using Large Language Models (LLMs), making prompt engineering for ECR prohibitively costly. In this work, we propose a graphical representation of events, X-AMR, anchored around individual mentions using a cross-document version of Abstract Meaning Representation. We then linearize the ECR with a novel multi-hop coreference algorithm over the event graphs. The event graphs simplify ECR, making it a) LLM cost-effective, b) compositional and interpretable, and c) easily annotated. For a fair assessment, we first enrich an existing ECR benchmark dataset with these event graphs using an annotator-friendly tool we introduce. Then, we employ GPT-4, the newest LLM by OpenAI, for these annotations. Finally, using the ECR algorithm, we assess GPT-4 against humans and analyze its limitations. Through this research, we aim to advance the state-of-the-art for efficient ECR and shed light on the potential shortcomings of current LLMs at this task. Code and annotations: \url{https://github.com/ahmeshaf/gpt_coref}"
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
+@inproceedings{nath-etal-2024-multimodal,
+    title = "Multimodal Cross-Document Event Coreference Resolution Using Linear Semantic Transfer and Mixed-Modality Ensembles",
+    author = "Nath, Abhijnan  and
+      Jamil, Huma  and
+      Ahmed, Shafiuddin Rehan  and
+      Baker, George Arthur  and
+      Ghosh, Rahul  and
+      Martin, James H.  and
+      Blanchard, Nathaniel  and
+      Krishnaswamy, Nikhil",
+    editor = "Calzolari, Nicoletta  and
+      Kan, Min-Yen  and
+      Hoste, Veronique  and
+      Lenci, Alessandro  and
+      Sakti, Sakriani  and
+      Xue, Nianwen",
+    booktitle = "Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING 2024)",
+    month = may,
+    year = "2024",
+    address = "Torino, Italia",
+    publisher = "ELRA and ICCL",
+    url = "https://aclanthology.org/2024.lrec-main.1039/",
+    pages = "11901--11916",
+    abstract = "Event coreference resolution (ECR) is the task of determining whether distinct mentions of events within a multi-document corpus are actually linked to the same underlying occurrence. Images of the events can help facilitate resolution when language is ambiguous. Here, we propose a multimodal cross-document event coreference resolution method that integrates visual and textual cues with a simple linear map between vision and language models. As existing ECR benchmark datasets rarely provide images for all event mentions, we augment the popular ECB+ dataset with event-centric images scraped from the internet and generated using image diffusion models. We establish three methods that incorporate images and text for coreference: 1) a standard fused model with finetuning, 2) a novel linear mapping method without finetuning and 3) an ensembling approach based on splitting mention pairs by semantic and discourse-level difficulty. We evaluate on 2 datasets: the augmented ECB+, and AIDA Phase 1. Our ensemble systems using cross-modal linear mapping establish an upper limit (91.9 CoNLL F1) on ECB+ ECR performance given the preprocessing assumptions used, and establish a novel baseline on AIDA Phase 1. Our results demonstrate the utility of multimodal information in ECR for certain challenging coreference problems, and highlight a need for more multimodal resources in the coreference resolution space."
 }
 
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein*†, A. and Podolsky*, B. and Rosen*, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  location={New Jersey},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
-  google_scholar_id={qyhmnyLat1gC},
-  video={https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  additional_info={. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
-  annotation={* Example use of superscripts<br>† Albert Einstein},
-  selected={true},
-  inspirehep_id = {3255}
-}
-
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
-}
-
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
-}
-
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
-}
-
-@Article{einstein1905photoelectriceffect,
-  bibtex_show={true},
-  abbr={Ann. Phys.},
-  title="{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}",
-  author={Albert Einstein},
-  abstract={This is the abstract text.},
-  journal={Ann. Phys.},
-  volume={322},
-  number={6},
-  pages={132--148},
-  year={1905},
-  doi={10.1002/andp.19053220607},
-  award={Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name={Nobel Prize}
-}
-
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif},
-  abbr={Vision}
+@inproceedings{regan-etal-2024-massive,
+    title = "{MASSIVE} Multilingual {A}bstract {M}eaning {R}epresentation: A Dataset and Baselines for Hallucination Detection",
+    author = "Regan, Michael  and
+      Wein, Shira  and
+      Baker, George  and
+      Monti, Emilio",
+    editor = "Bollegala, Danushka  and
+      Shwartz, Vered",
+    booktitle = "Proceedings of the 13th Joint Conference on Lexical and Computational Semantics (*SEM 2024)",
+    month = jun,
+    year = "2024",
+    address = "Mexico City, Mexico",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.starsem-1.1/",
+    doi = "10.18653/v1/2024.starsem-1.1",
+    pages = "1--17",
+    abstract = "Abstract Meaning Representation (AMR) is a semantic formalism that captures the core meaning of an utterance. There has been substantial work developing AMR corpora in English and more recently across languages, though the limited size of existing datasets and the cost of collecting more annotations are prohibitive. With both engineering and scientific questions in mind, we introduce MASSIVE-AMR, a dataset with more than 84,000 text-to-graph annotations, currently the largest and most diverse of its kind: AMR graphs for 1,685 information-seeking utterances mapped to 50+ typologically diverse languages. We describe how we built our resource and its unique features before reporting on experiments using large language models for multilingual AMR and SPARQL parsing as well as applying AMRs for hallucination detection in the context of knowledge base question answering, with results shedding light on persistent issues using LLMs for structured parsing."
 }
