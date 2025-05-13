@@ -262,7 +262,7 @@ display_categories: ["external-services"] # these categories will be displayed o
 
 scholar:
   last_name: [Baker]
-  first_name: [George, Arthur]
+  first_name: [George Arthur, George]
 
   style: apa
   locale: en

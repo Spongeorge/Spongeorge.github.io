@@ -30,3 +30,7 @@ latest_posts:
 ---
 
 Under Construction 🚧
+
+I'm a researcher with a background in computer and data science, interested in applied AI. In the past I've worked on educational and medical (incl. medicinal chemistry) applications of language models. I'm especially interested in the intersection of graphs and language (e.g. semantic graphs like AMR/UMR, knowledge graphs, chemical graphs, etc.).
+
+My current work at CU's ICS is focused on leveraging discourse structure to improve classroom AI agents. My work with the University of Utah is on the study of decentralized content moderation (how do self-governing online communities choose moderators/rules, and how do those choices affect those communities?).
