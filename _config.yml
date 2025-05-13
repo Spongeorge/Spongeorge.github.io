@@ -84,10 +84,10 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: george-baker # blog_name will be displayed in your blog page
-blog_description: 
-permalink: /blog/:year/:title/
-lsi: false # produce an index for related posts
+#blog_name: george-baker # blog_name will be displayed in your blog page
+#blog_description: 
+#permalink: /blog/:year/:title/
+#lsi: false # produce an index for related posts
 
 # Pagination
 pagination:
@@ -184,7 +184,7 @@ exclude:
   - lighthouse_results/
   - package.json
   - package-lock.json
-  - _pages/about_einstein.md
+  #- _pages/about_einstein.md
   - purgecss.config.js
   - README.md
   - readme_preview/
@@ -261,8 +261,8 @@ display_categories: ["external-services"] # these categories will be displayed o
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [Baker]
+  first_name: [George, A.]
 
   style: apa
   locale: en
