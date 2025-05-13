@@ -476,6 +476,13 @@ ninja.data = [{
           window.open("mailto:%67%65%6F%72%67%65.%62%61%6B%65%72@%63%6F%6C%6F%72%61%64%6F.%65%64%75", "_blank");
         },
       },{
+        id: 'social-linkedin',
+        title: 'LinkedIn',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.linkedin.com/in/georgeabaker", "_blank");
+        },
+      },{
         id: 'social-scholar',
         title: 'Google Scholar',
         section: 'Socials',
