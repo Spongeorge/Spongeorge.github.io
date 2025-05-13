@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Researcher, University of Colorado Boulder's <a href='https://www.colorado.edu/ics/'>Institute of Cognitive Science</a>.\
+subtitle: Researcher, University of Colorado Boulder's <a href='https://www.colorado.edu/ics/'>Institute of Cognitive Science</a>.<br>
           Research Assistant, University of Utah's <a href='https://eccles.utah.edu/faculty/department-operations-management-information-systems/'>Department of Operations and Information Systems</a> #Address. Contacts. Motto. Etc.
 
 profile:
