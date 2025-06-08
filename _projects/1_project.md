@@ -1,8 +1,8 @@
 ---
 layout: page
 title: NetworkX-Compatible Graph Language Models
-description: with background image
-img: assets/img/networkx_logo.svg
+description: A generalized implementation of Graph Language Models for use with NetworkX graphs.
+img: assets/img/networkx_logo.png
 importance: 1
 category: work
 related_publications: true
