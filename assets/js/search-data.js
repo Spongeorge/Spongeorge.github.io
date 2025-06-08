@@ -404,7 +404,7 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "projects-networkx-compatible-graph-language-models",
           title: 'NetworkX-Compatible Graph Language Models',
-          description: "with background image",
+          description: "A generalized implementation of Graph Language Models for use with NetworkX graphs.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project.html";
             },},{
