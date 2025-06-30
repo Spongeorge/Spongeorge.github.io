@@ -6,6 +6,7 @@ img: assets/img/networkx_logo.png
 importance: 1
 category: work
 related_publications: true
+redirect: https://github.com/spongeorge/GraphLanguageModels/
 ---
 
 Every project has a beautiful feature showcase page.
