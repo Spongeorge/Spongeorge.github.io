@@ -1,24 +1,55 @@
-@inproceedings{shaier-etal-2025,
-    title = "MALAMUTE: A Multilingual, Highly-granular, Template-free, Education-based Probing Dataset",
-    author = "Sagi Shaier and George Arthur Baker and Chiranthan Sridhar and Lawrence Hunter and Katharina von der Wense",
-    booktitle = "Findings of the 63rd Annual Meeting of the Association for Computational Linguistics ({ACL} 2025 (to appear))",
-    month = aug,
+@inproceedings{shaier-etal-2025-malamute,
+    title = "{MALAMUTE}: A Multilingual, Highly-granular, Template-free, Education-based Probing Dataset",
+    author = "Shaier, Sagi  and
+      Baker, George Arthur  and
+      Sridhar, Chiranthan  and
+      Hunter, Lawrence  and
+      Wense, Katharina Von Der",
+    editor = "Che, Wanxiang  and
+      Nabende, Joyce  and
+      Shutova, Ekaterina  and
+      Pilehvar, Mohammad Taher",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL 2025",
+    month = jul,
     year = "2025",
+    address = "Vienna, Austria",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.findings-acl.209/",
+    pages = "4051--4069",
+    ISBN = "979-8-89176-256-5",
     selected = {true},
     preview={acl-2025.png},
-    abstract = "Language models (LMs) have excelled in various broad domains. However, to ensure their safe and effective integration into real-world educational settings, they must demonstrate proficiency in specific, granular areas of knowledge. Existing cloze-style benchmarks, commonly used to evaluate LMs' knowledge, have three major limitations. They: 1) do not cover the educational domain; 2) typically focus on low-complexity, generic knowledge or broad domains, which do not adequately assess the models' knowledge in specific subjects; and 3) often rely on templates that can bias model predictions. Here, we introduce MALAMUTE, a multilingual, template-free, and highly granular probing dataset comprising expert-written, peer-reviewed probes from 71 university-level textbooks across three languages (English, Spanish, and Polish). MALAMUTE is the first education-based cloze-style dataset. It covers eight domains, each with up to 14 subdomains, further broken down into concepts and concept-based prompts, totaling 33,361 university curriculum concepts and 116,887 prompts. MALAMUTE's fine granularity, educational focus, and inclusion of both sentence-level and paragraph-level prompts make it an ideal tool for evaluating LMs' course-related knowledge. Our evaluation of masked and causal LMs on MALAMUTE shows that despite overall proficiency, they have significant gaps in knowledge when examined closely on specific subjects, hindering their safe use in classrooms and underscoring the need for further development.",
+    abstract = "Language models (LMs) have excelled in various broad domains. However, to ensure their safe and effective integration into real-world educational settings, they must demonstrate proficiency in specific, granular areas of knowledge. Existing cloze-style benchmarks, commonly used to evaluate LMs' knowledge, have three major limitations. They: 1) do not cover the educational domain; 2) typically focus on low-complexity, generic knowledge or broad domains, which do not adequately assess the models' knowledge in specific subjects; and 3) often rely on templates that can bias model predictions. Here, we introduce MALAMUTE, a multilingual, template-free, and highly granular probing dataset comprising expert-written, peer-reviewed probes from 71 university-level textbooks across three languages (English, Spanish, and Polish). MALAMUTE is the first education-based cloze-style dataset. It covers eight domains, each with up to 14 subdomains, further broken down into concepts and concept-based prompts, totaling 33,361 university curriculum concepts and 116,887 prompts. MALAMUTE{'}s fine granularity, educational focus, and inclusion of both sentence-level and paragraph-level prompts make it an ideal tool for evaluating LMs' course-related knowledge. Our evaluation of masked and causal LMs on MALAMUTE shows that despite overall proficiency, they have significant gaps in knowledge when examined closely on specific subjects, hindering their safe use in classrooms and underscoring the need for further development."
 }
 
-
-@inproceedings{cai-etal-2025,
+@inproceedings{cai-etal-2025-search,
     title = "In Search of the Lost Arch in Dialogue: A Dependency Dialogue Acts Corpus for Multi-Party Dialogues",
-    author = "Jon Cai and Brendan King and Peyton Cameron and Susan Windisch Brown and Miriam Eckert and Dananjay Srinivas and George Arthur Baker and V Kate Everson and Martha Palmer and James Martin and Jeffrey Flanigan",
-    booktitle = "Findings of the 63rd Annual Meeting of the Association for Computational Linguistics ({ACL} 2025 (to appear))",
-    month = aug,
+    author = "Cai, Jon  and
+      King, Brendan  and
+      Cameron, Peyton  and
+      Brown, Susan Windisch  and
+      Eckert, Miriam  and
+      Srinivas, Dananjay  and
+      Baker, George Arthur  and
+      Everson, V Kate  and
+      Palmer, Martha  and
+      Martin, James  and
+      Flanigan, Jeffrey",
+    editor = "Che, Wanxiang  and
+      Nabende, Joyce  and
+      Shutova, Ekaterina  and
+      Pilehvar, Mohammad Taher",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL 2025",
+    month = jul,
     year = "2025",
+    address = "Vienna, Austria",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.findings-acl.1032/",
+    pages = "20135--20149",
+    ISBN = "979-8-89176-256-5",
     selected = {true},
     preview={acl-2025.png},
-    abstract = "Understanding the structure of multi-party conversation and the intentions and dialogue acts of each speaker remains a significant challenge in NLP. While a number of corpora annotated using theoretical frameworks of dialogue have been proposed, these typically focus on either utterance-level labeling of speaker intent, missing wider context, or the rhetorical structure of a dialogue, losing fine-grained intents captured in dialogue acts. Recently, the Dependency Dialogue Acts (DDA) framework has been proposed to for modeling both the fine-grained intents of each speaker and the structure of multi-party dialogues. However, there is not yet a corpus annotated with this framework available for the community to study. To address this gap, we introduce a new corpus of 33 dialogues and over 9,000 utterance units, densely annotated using the Dependency Dialogue Acts (DDA) framework.Our dataset spans four genres of multi-party conversations from different modalities: (1) physics classroom discussions, (2) engineering classroom discussions, (3) board game interactions, and (4) written online game chat logs. Each session is doubly annotated and adjudicated to ensure high-quality labeling. We present a description of the dataset and annotation process, an analysis of speaker dynamics enabled by our annotation, and a baseline evaluation of LLMs as DDA parsers. We discuss the implications of this dataset understanding dynamics between speakers and for developing more controllable dialogue agents.",
+    abstract = "Understanding the structure of multi-party conversation and the intentions and dialogue acts of each speaker remains a significant challenge in NLP. While a number of corpora annotated using theoretical frameworks of dialogue have been proposed, these typically focus on either utterance-level labeling of speaker intent, missing wider context, or the rhetorical structure of a dialogue, losing fine-grained intents captured in dialogue acts. Recently, the Dependency Dialogue Acts (DDA) framework has been proposed to for modeling both the fine-grained intents of each speaker and the structure of multi-party dialogues. However, there is not yet a corpus annotated with this framework available for the community to study. To address this gap, we introduce a new corpus of 33 dialogues and over 9,000 utterance units, densely annotated using the Dependency Dialogue Acts (DDA) framework.Our dataset spans four genres of multi-party conversations from different modalities: (1) physics classroom discussions, (2) engineering classroom discussions, (3) board game interactions, and (4) written online game chat logs. Each session is doubly annotated and adjudicated to ensure high-quality labeling. We present a description of the dataset and annotation process, an analysis of speaker dynamics enabled by our annotation, and a baseline evaluation of LLMs as DDA parsers. We discuss the implications of this dataset understanding dynamics between speakers and for developing more controllable dialogue agents."
 }
 
 @inproceedings{ahmed-etal-2024-generating,
