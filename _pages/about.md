@@ -4,12 +4,6 @@ title: about
 permalink: /
 subtitle: <b>Scientific Software Engineer, University of Chicago's <a href='https://biologicalsciences.uchicago.edu/'>Biological Sciences Division</a></b>
           <br>
-          <br>
-          Formerly
-          <br>
-          Researcher, University of Colorado Boulder's <a href='https://www.colorado.edu/ics/'>Institute of Cognitive Science</a>
-          <br>
-          Research Assistant, University of Utah's <a href='https://eccles.utah.edu/faculty/department-operations-management-information-systems/'>Department of Operations and Information Systems</a> #Address. Contacts. Motto. Etc.
 
 profile:
   align: right
@@ -35,4 +29,3 @@ latest_posts:
 ---
 
 
-Tinky
