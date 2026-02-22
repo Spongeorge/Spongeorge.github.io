@@ -13,7 +13,7 @@ subtitle: <b>Scientific Software Engineer, University of Chicago's <a href='http
 
 profile:
   align: right
-  image: IMG_0200.jpg
+  image: IMG_0200.JPG
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>george.baker@bsd.chicago.edu</p>
