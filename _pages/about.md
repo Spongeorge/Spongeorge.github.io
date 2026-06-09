@@ -28,4 +28,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
+In the lab of Lawrence Hunter.
+
+I work on biomedical natural language processing systems.
 
